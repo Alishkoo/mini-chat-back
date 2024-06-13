@@ -18,7 +18,7 @@ const io = new Server(server, {
     methods: ["GET", "POST"]
   }
 })
-const PORT = 4000;
+const PORT = process.env.PORT || 4000;
 
 connectDB();
 
